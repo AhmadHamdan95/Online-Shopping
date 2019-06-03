@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <title>Shop Owner</title>
+    </head>
+    <body>
+        <!-- main section start -->
+        <div class="container-fluid mainSection">
+            <div class="row pt-5">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-add-product-tab" data-toggle="pill" href="#v-pills-add-product" role="tab" aria-controls="v-pills-add-product" aria-selected="true">Add Product</a>
+                        <a class="nav-link" id="v-pills-manage-customers-tab" data-toggle="pill" href="#v-pills-manage-customers" role="tab" aria-controls="v-pills-manage-customers" aria-selected="false">Manage Customers</a>
+                        <a class="nav-link" id="v-pills-manage-shopOwners-tab" data-toggle="pill" href="#v-pills-manage-shopOwners" role="tab" aria-controls="v-pills-manage-shopOwners" aria-selected="false">Manage Shop Owners</a>
+                        <a class="nav-link" id="v-pills-manage-products-tab" data-toggle="pill" href="#v-pills-manage-products" role="tab" aria-controls="v-pills-manage-products" aria-selected="false">Manage Products</a>
+                        <a class="nav-link" id="v-pills-manage-orders-tab" data-toggle="pill" href="#v-pills-manage-orders" role="tab" aria-controls="v-pills-manage-orders" aria-selected="false">Manage Orders</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-add-product" role="tabpanel" aria-labelledby="v-pills-add-product-tab">
+                            <div class="form-group">
+                                <form name="add_name" id="add_name">
+                                    <div class="form-group">
+                                        <label for="productName">Product name</label>
+                                        <input type="text" name="productName" class="form-control" id="productName" placeholder="Product name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category">Category</label>
+                                        <select name="category" class="form-control" id="category">
+                                            <option value="Men">Men</option>
+                                            <option value="Women">Women</option>
+                                            <option value="Kids">Kids</option>
+                                            <option value="Accessories">Accessories</option>
+                                            <option value="Foods">Foods</option>
+                                        </select>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mr-sm-2 my-4">
+                                        <input type="checkbox" name="availability" class="custom-control-input" id="availability">
+                                        <label class="custom-control-label" for="availability">Availability</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="productCode">Product code</label>
+                                        <input type="text" name="productCode" class="form-control" id="productCode" placeholder="Product code">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="price">Price</label>
+                                        <input type="number" name="price" class="form-control" id="price" placeholder="Price">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="amount">Amount</label>
+                                        <input type="number" name="amount" class="form-control" id="amount" placeholder="Amount">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="expiryDate">Expiry date</label>
+                                        <input type="date" name="expiryDate" class="form-control" id="expiryDate" placeholder="Expiry date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <textarea name="description" class="form-control" id="description" rows="3"></textarea>
+                                    </div>
+                                                
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dynamic_field">
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="name[]" placeholder="Enter attribute" class="form-control name_list" />
+                                                    <input type="text" placeholder="Enter value then press comma [ , ]" class="form-control add-tag" />
+                                                    <div class="tags values_list"></div>
+                                                </td>
+                                                <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>
+                                            </tr>
+                                        </table>
+                                        <input type="submit" name="submit" id="submit" class="btn btn-info" value="Create" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-manage-customers" role="tabpanel" aria-labelledby="v-pills-manage-customers-tab">
+                            <div class="row px-5">
+                                <table class="table mb-5">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="employeeRatingHead">Full name</th>
+                                            <th scope="col" class="employeeRatingHead">ID</th>
+                                            <th scope="col" class="employeeRatingHead">GPA</th>
+                                            <th scope="col" class="employeeRatingHead">Job title</th>
+                                            <th scope="col" class="employeeRatingHead">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="deactivate" class="btn btn-primary deactivate">Deactivate</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="deactivate" class="btn btn-primary deactivate">Deactivate</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-manage-shopOwners" role="tabpanel" aria-labelledby="v-pills-manage-shopOwners-tab">
+                            <div class="row px-5">
+                                <table class="table mb-5">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="employeeRatingHead">Full name</th>
+                                            <th scope="col" class="employeeRatingHead">ID</th>
+                                            <th scope="col" class="employeeRatingHead">GPA</th>
+                                            <th scope="col" class="employeeRatingHead">Job title</th>
+                                            <th scope="col" class="employeeRatingHead">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="deactivate" class="btn btn-primary deactivate">Deactivate</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="deactivate" class="btn btn-primary deactivate">Deactivate</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-manage-products" role="tabpanel" aria-labelledby="v-pills-manage-products-tab">
+                            <div class="row px-5">
+                                <table class="table mb-5">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="employeeRatingHead">Full name</th>
+                                            <th scope="col" class="employeeRatingHead">ID</th>
+                                            <th scope="col" class="employeeRatingHead">GPA</th>
+                                            <th scope="col" class="employeeRatingHead">Job title</th>
+                                            <th scope="col" class="employeeRatingHead">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="edit" class="btn btn-primary edit">Edit</button>
+                                            <button type="button" name="hide" class="btn btn-primary hide">Hide</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="edit" class="btn btn-primary edit">Edit</button>
+                                            <button type="button" name="hide" class="btn btn-primary hide">Hide</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-manage-orders" role="tabpanel" aria-labelledby="v-pills-manage-orders-tab">
+                            <div class="row px-5">
+                                <table class="table mb-5">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="employeeRatingHead">Full name</th>
+                                            <th scope="col" class="employeeRatingHead">ID</th>
+                                            <th scope="col" class="employeeRatingHead">GPA</th>
+                                            <th scope="col" class="employeeRatingHead">Job title</th>
+                                            <th scope="col" class="employeeRatingHead">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="accept" class="btn btn-primary accept">Accept</button>
+                                            <button type="button" name="reject" class="btn btn-primary reject">Reject</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fullName">Ali Ahmed</span></td>
+                                            <td><span class="idNumber">911400781</span></td>
+                                            <td><span class="gpa">90.9</span>%</td>
+                                            <td><span class="jobTitle">Front-end</span></td>
+                                            <td>
+                                            <button type="button" name="accept" class="btn btn-primary accept">Accept</button>
+                                            <button type="button" name="reject" class="btn btn-primary reject">Reject</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main section end -->
+        
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery3.3.1.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

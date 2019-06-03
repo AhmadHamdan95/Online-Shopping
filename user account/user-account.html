@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+    <title>User Account</title>
+  </head>
+  <body>
+    <!-- scroll to top start -->
+    <a class="scroll-to-top" href="#">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- scroll to top end -->
+
+    <!-- header section start -->
+    <div class="container-fluid headerSection">
+      <!-- head-navs start -->
+      <div class="row theHead justify-content-between px-5">
+        <div class="headForm">
+          <span>Currency : NIS</span>
+        </div>
+
+        <div class="headNavs">
+          <div class="shoppingCart">
+            <a class="theCartLink position-relative" href="../shopping cart/shopping-cart.html" title="Shopping cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge cartBadge">3</span>
+            </a>
+            <a class="theNotificationsLink position-relative" href="../notifications/notifications.html" title="Notifications">
+              <i class="fas fa-bell"></i>
+              <span class="badge notificationsBadge">1</span>
+            </a>
+            <div class="dropdown dropdownAccount">
+              <a class="btn dropdown-toggle" href="#" title="Account" role="button" id="dropdownMenuAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAccount">
+                <a class="dropdown-item" href="../user account/user-account.html">My account</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../sign up/sign-up.html">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- head-navs end -->
+
+      <!-- navbar start -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 py-3">
+          <a class="navbar-brand" href="../index.html">online shopping</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  men<br>
+                  <span class="nav-arrow">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                  <div class="d-flex">
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                      <a class="dropdown-item" href="#">Polo Shirts</a>
+                      <a class="dropdown-item" href="#">Sportswear</a>
+                      <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                      <a class="dropdown-item" href="#">T-Shirts</a>
+                    </div>
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">formal</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                      <a class="dropdown-item" href="#">Suits</a>
+                      <a class="dropdown-item" href="#">Trousers</a>
+                    </div>
+                  </div>
+                  <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                    <h1>autumn sale!</h1>
+                    <p>up to 50% off</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  women<br>
+                  <span class="nav-arrow">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                  <div class="d-flex">
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                      <a class="dropdown-item" href="#">Polo Shirts</a>
+                      <a class="dropdown-item" href="#">Sportswear</a>
+                      <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                      <a class="dropdown-item" href="#">T-Shirts</a>
+                    </div>
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">formal</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                      <a class="dropdown-item" href="#">Suits</a>
+                      <a class="dropdown-item" href="#">Trousers</a>
+                    </div>
+                  </div>
+                  <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                    <h1>autumn sale!</h1>
+                    <p>up to 50% off</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  kids<br>
+                  <span class="nav-arrow">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                  <div class="d-flex">
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                      <a class="dropdown-item" href="#">Polo Shirts</a>
+                      <a class="dropdown-item" href="#">Sportswear</a>
+                      <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                      <a class="dropdown-item" href="#">T-Shirts</a>
+                    </div>
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">formal</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                      <a class="dropdown-item" href="#">Suits</a>
+                      <a class="dropdown-item" href="#">Trousers</a>
+                    </div>
+                  </div>
+                  <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                    <h1>autumn sale!</h1>
+                    <p>up to 50% off</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  accessories<br>
+                  <span class="nav-arrow">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                  <div class="d-flex">
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                      <a class="dropdown-item" href="#">Polo Shirts</a>
+                      <a class="dropdown-item" href="#">Sportswear</a>
+                      <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                      <a class="dropdown-item" href="#">T-Shirts</a>
+                    </div>
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">formal</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                      <a class="dropdown-item" href="#">Suits</a>
+                      <a class="dropdown-item" href="#">Trousers</a>
+                    </div>
+                  </div>
+                  <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                    <h1>autumn sale!</h1>
+                    <p>up to 50% off</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  foods<br>
+                  <span class="nav-arrow">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                  <div class="d-flex">
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                      <a class="dropdown-item" href="#">Polo Shirts</a>
+                      <a class="dropdown-item" href="#">Sportswear</a>
+                      <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                      <a class="dropdown-item" href="#">T-Shirts</a>
+                    </div>
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">formal</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                      <a class="dropdown-item" href="#">Suits</a>
+                      <a class="dropdown-item" href="#">Trousers</a>
+                    </div>
+                  </div>
+                  <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                    <h1>autumn sale!</h1>
+                    <p>up to 50% off</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  brands<br>
+                  <span class="nav-arrow">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                  <div class="d-flex">
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">casuals</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Hoodies & Sweatshirts</a>
+                      <a class="dropdown-item" href="#">Polo Shirts</a>
+                      <a class="dropdown-item" href="#">Sportswear</a>
+                      <a class="dropdown-item" href="#">Trousers & Chinos</a>
+                      <a class="dropdown-item" href="#">T-Shirts</a>
+                    </div>
+                    <div>
+                      <h6 class="px-4 mt-2 mb-4">formal</h6>
+                      <a class="dropdown-item" href="#">Jackets</a>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                      <a class="dropdown-item" href="#">Suits</a>
+                      <a class="dropdown-item" href="#">Trousers</a>
+                    </div>
+                  </div>
+                  <div class="dropdownCover px-5 pt-5 pb-4 mx-4 mt-5 text-center">
+                    <h1>autumn sale!</h1>
+                    <p>up to 50% off</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline searching ml-lg-4 mt-3 mt-lg-0" action="">
+              <div class="form-group">
+                <input type="search" placeholder="Search" class="form-control">
+                <button type="submit" class="searchBtn">
+                    <i class='fas fa-search'></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <!-- navbar end -->
+    </div>
+    <!-- header section end -->
+
+    <!-- cover start -->
+    <div class="container-fluid">
+      <div class="row cover justify-content-center align-items-center">
+        <div class="coverText text-center">
+          <h2>my account</h2>
+        </div>
+      </div>
+    </div>
+    <!-- cover end -->
+
+    <!-- main section start -->
+    <div class="container-fluid userAccount mainSection">
+      <div class="row my-account-bar pt-4 pb-2">
+        <div class="hi-user col">
+          <div class="pl-lg-5">
+            <p class="px-3">Hi <span class="userName">Ahmed</span>, welcome to your profile</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills pl-lg-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-personal-information-tab" data-toggle="pill" href="#v-pills-personal-information" role="tab" aria-controls="v-pills-personal-information" aria-selected="true">personal information</a>
+            <a class="nav-link" id="v-pills-order-history-tab" data-toggle="pill" href="#v-pills-order-history" role="tab" aria-controls="v-pills-order-history" aria-selected="false">order history</a>
+            <a class="nav-link" id="v-pills-addresses-tab" data-toggle="pill" href="#v-pills-addresses" role="tab" aria-controls="v-pills-addresses" aria-selected="false">addresses</a>
+            <a class="nav-link" id="v-pills-payment-tab" data-toggle="pill" href="#v-pills-payment" role="tab" aria-controls="v-pills-payment" aria-selected="false">payment</a>
+            <a class="nav-link" id="v-pills-wishlist-tab" data-toggle="pill" href="#v-pills-wishlist" role="tab" aria-controls="v-pills-wishlist" aria-selected="false">wishlist</a>
+            <a class="nav-link" href="../sign up/sign-up.html">log out</a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-personal-information" role="tabpanel" aria-labelledby="v-pills-personal-information-tab">
+              <h5 class="mb-5 mt-2">personal information</h5>
+              <form action="">
+                <div class="form-group">
+                  <label for="firstName">first name <span>*</span></label>
+                  <input type="text" name="firstName" class="form-control col-md-7 col-lg-5" id="firstName" placeholder="Your name"  required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">last name <span>*</span></label>
+                  <input type="text" name="lastName" class="form-control col-md-7 col-lg-5" id="lastName" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                  <label for="theEmail">email <span>*</span></label>
+                  <input type="email" name="theEmail" class="form-control col-md-7 col-lg-5" id="theEmail" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                  <label for="thePassword">password <span>*</span></label>
+                  <input type="password" name="thePassword" class="form-control col-md-7 col-lg-5" id="thePassword" aria-describedby="passwordNote" placeholder="Your password" required>
+                  <small id="passwordNote" class="form-text text-muted">Must be 8-20 characters long.</small>
+                </div>
+                <div class="form-group">
+                  <label for="confirmPassword">confirm password <span>*</span></label>
+                  <input type="password" name="confirmPassword" class="form-control col-md-7 col-lg-5" id="confirmPassword" placeholder="Confirm password" required>
+                </div>
+                <button type="submit" class="mt-3">apply</button>
+              </form>
+            </div>
+            <div class="tab-pane fade pr-md-5" id="v-pills-order-history" role="tabpanel" aria-labelledby="v-pills-order-history-tab">
+              <h5 class="mb-5 mt-2">order history</h5>
+              <p class="no-orders d-none">you have not yet placed any orders using this account</p>
+
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="productImg float-left mr-4">
+                        <img class="img-fluid" src="../assets/img/bag.png">
+                      </div>
+                      <div class="productText float-left"><p>New Balance Men's Street Backpack</p><br>
+                        <span>S-Black-2pieces</span>
+                      </div>
+                    </td>
+                    <td><span class="cost"><sup class="sheqel">&#8362;</sup>970</span></td>
+                    <td>
+                      <button type="button" class="btn addFeedback" data-toggle="modal" data-target="#feedback">add feedback</button>
+
+                      <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">feedback</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="rating d-inline-block w-100 my-2">
+                                  <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="1">1 star</label>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="comment" class="col-form-label">COMMENT</label>
+                                  <textarea class="form-control" id="comment"></textarea>
+                                </div>
+                                <button type="submit" class="btn addFeedback my-3">add feedback</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="productImg float-left mr-4">
+                        <img class="img-fluid" src="../assets/img/scarve.png">
+                      </div>
+                      <div class="productText float-left"><p>Lyle & Scott Men's Short Sleeve Camo Pocket</p><br>
+                        <span>XXL-White-1piece</span>
+                      </div>
+                    </td>
+                    <td><span class="cost"><sup class="sheqel">&#8362;</sup>76</span></td>
+                    <td>
+                      <button type="button" class="btn addFeedback" data-toggle="modal" data-target="#feedback">add feedback</button>
+
+                      <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">feedback</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="rating d-inline-block w-100 my-2">
+                                  <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="1">1 star</label>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="comment" class="col-form-label">COMMENT</label>
+                                  <textarea class="form-control" id="comment"></textarea>
+                                </div>
+                                <button type="submit" class="btn addFeedback my-3">add feedback</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel" aria-labelledby="v-pills-addresses-tab">
+              <h5 class="mb-5 mt-2">addresses</h5>
+              <p>add or edit address information</p>
+              <form action="">
+                <button type="submit" class="mt-3">Enter New Address</button>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+              <h5 class="mb-5 mt-2">payment</h5>
+              <p>coming soon ...</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab">
+              <h5 class="mb-5 mt-2">wishlist</h5>
+              <p>you have no items on your wishlist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section end -->
+
+    <!-- footer section start -->
+    <div class="container-fluid footer">
+      <div class="row justify-content-center">
+        <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+          <h6>information</h6>
+          <ul>
+            <li><a href="#">The brand</a></li>
+            <li><a href="#">Local stores</a></li>
+            <li><a href="#">Customer service</a></li>
+            <li><a href="#">Privacy & cookies</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+
+        <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+          <h6>why buy from us</h6>
+          <ul>
+            <li><a href="#">Shipping & returns</a></li>
+            <li><a href="#">Secure shopping</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Award winning</a></li>
+            <li><a href="#">Ethical trading</a></li>
+          </ul>
+        </div>
+
+        <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+          <h6>your account</h6>
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">View cart</a></li>
+            <li><a href="#">View your lookbook</a></li>
+            <li><a href="#">Track an order</a></li>
+            <li><a href="#">Update information</a></li>
+          </ul>
+        </div>
+
+        <div class="footerItems col-12 col-md-2 mb-5 mb-md-0">
+          <h6>lookbook</h6>
+          <ul>
+            <li><a href="#">Latest posts</a></li>
+            <li><a href="#">Men's lookbook</a></li>
+            <li><a href="#">Women's lookbook</a></li>
+            <li><a href="#">Lookbooks RSS feed</a></li>
+            <li><a href="#">View your lookbook</a></li>
+            <li><a href="#">Delete your lookbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footerItems col-12 col-md-2">
+          <h6>contact details</h6>
+          <ul>
+            <li><span>Telephone: 0123-456-789</span></li>
+            <li><span>Email: support@website.com</span></li>
+            <li><a class="navbar-brand" href="../index.html">online shopping</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row social justify-content-center my-5">
+        <a class="socialLinks facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="socialLinks twitter" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="socialLinks instagram" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="socialLinks pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+
+      <div class="row copyRightLine align-items-center justify-content-center">
+        <span>OnlineShopping.com All rights reserved &copy 2019</span>
+      </div>
+    </div>
+    <!-- footer section end -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../assets/js/jquery3.3.1.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.nicescroll.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
